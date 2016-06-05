@@ -35,4 +35,16 @@
         android:layout_below="@id/ButtonInsertText"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Ingredient"
+        android:id="@+id/buttonIngredient"
+        android:layout_below="@+id/TextViewFirebase"
+        android:layout_alignLeft="@+id/ButtonInsertText"
+        android:layout_alignStart="@+id/ButtonInsertText"
+        android:layout_marginTop="30dp"
+        android:onClick="OpenIngredient"
+        />
+
 </RelativeLayout>

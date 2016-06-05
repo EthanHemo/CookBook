@@ -1,5 +1,6 @@
 package com.hemo.ethan.cookbook;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -37,7 +38,7 @@ public class Main2Activity extends AppCompatActivity {
         mTextViewFirebase = (TextView)findViewById(R.id.TextViewFirebase);
         mEditTextInput = (EditText)findViewById(R.id.EditTextInput);
 
-        database = FirebaseDatabase.getInstance();
+        /*database = FirebaseDatabase.getInstance();
         myRef = database.getReference("test-8aded");
 
         // Read from the database
@@ -57,7 +58,7 @@ public class Main2Activity extends AppCompatActivity {
                 Log.w(TAG, "Failed to read value.", error.toException());
             }
         });
-
+        */
 
     }
 
@@ -65,6 +66,12 @@ public class Main2Activity extends AppCompatActivity {
 
         myRef.setValue(mEditTextInput.getText().toString());
 
+
+    }
+
+    public void OpenIngredient(View view) {
+        Intent intent = new Intent(getApplicationContext(), AddRecipeActivity.class);
+        startActivity(intent);
 
     }
 }
