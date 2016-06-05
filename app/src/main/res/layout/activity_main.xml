@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hemo.ethan.cookbook.MainActivity"
+    android:background="#e6effa">
+
+    <TextView
+        android:id="@+id/TextViewHeaderRecipeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#330033"
+        android:text="Recipe name for delicious meal that may go line one down!" />
+
+    <TextView
+        android:id="@+id/TextViewShortDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewHeaderRecipeName"
+        android:layout_alignLeft="@id/TextViewHeaderRecipeName"
+
+        android:textSize="18sp"
+        android:text="25 min, 1 hour, #tasty #lazy"
+        />
+
+    <TextView
+        android:id="@+id/TextViewHeaderIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewShortDetails"
+        android:layout_alignLeft="@id/TextViewHeaderRecipeName"
+        android:layout_marginTop="25dp"
+
+        android:text="Ingredients"
+        android:textSize="22sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/TextViewHeaderIngredients"
+        android:background="#fff9e2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:textSize="20sp"
+                android:text="2"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:textSize="20sp"
+                android:text="Chicken Breast"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:textSize="20sp"
+                android:text="1"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:textSize="20sp"
+                android:text="Spoon of teriyaki"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextViewHeaderMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayoutIngredients"
+        android:layout_alignLeft="@id/TextViewHeaderRecipeName"
+        android:layout_marginTop="25dp"
+
+        android:text="Method"
+        android:textSize="22sp"
+        />
+
+    
+
+</RelativeLayout>
